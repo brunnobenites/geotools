@@ -10,3 +10,74 @@ html, body {
   bottom: 0;
   width: 100%;
 }
+
+/* .map {
+  width: 100%;
+  height: 400px;
+} */
+
+.jazigo{
+  border: 2px solid #007BFF;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  background-color: #f0f0f0;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #888888;
+  position: absolute;
+}
+
+h2 {
+  font-size: 20px;
+  color: #007BFF;
+  margin: 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+
+/* JAZIGOS POPUP ----------- */
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  bottom: 12px;
+  left: -50px;
+  min-width: 280px;
+}
+.ol-popup:after, .ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.ol-popup:after {
+  border-top-color: white;
+  border-width: 10px;
+  left: 48px;
+  margin-left: -10px;
+}
+.ol-popup:before {
+  border-top-color: #cccccc;
+  border-width: 11px;
+  left: 48px;
+  margin-left: -11px;
+}
+.ol-popup-closer {
+  text-decoration: none;
+  position: absolute;
+  top: 2px;
+  right: 8px;
+}
+.ol-popup-closer:after {
+  content: "✖";
+}

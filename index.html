@@ -2,12 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://openlayers.org/favicon.ico"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Using OpenLayers with Vite</title>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="map" class="map"></div>
+
+    <div id="info" class="jazigo">
+      <h2 id="jazigo">Dados do jazigo</h2>
+      <strong><p id="nome">Nome</p></strong>
+      <strong><p id="sobrenome">Sobrenome</p></strong>
+      <strong><p id="idade">Idade do falecido:</p></strong>
+      <strong><p id="impermeabilizado">Impermeabilizado</p></strong>
+    </div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
